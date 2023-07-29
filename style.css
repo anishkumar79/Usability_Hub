@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@300;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/* resets */
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+
+
+/* utility classes */
+
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.container {
+    width: 100vw;
+    margin: 30px 0;
+    margin-inline: auto;                                    /* inline for left and right directly*/
+    /* overflow: hidden; */
+    padding-inline: 40px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+    transition: 0.25s ease-out;
+}
+
+.primary-button {
+    background-color: var(--accent-color); 
+    color: white !important;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 12px 24px;
+    /* box-shadow: 0 0 2px var(--secondary-text-color); */
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button {
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 5px;
+    padding: 12px 24px;
+    color: var(--primary-text-color) !important;
+    font-weight: 500;
+}
+
+.secondary-button:hover {
+    border-color: var(--secondary-text-color);
+    color: var(--accent-color) !important;
+    border: 1px solid;
+}
+
+.margin-updown {
+    margin: 20px 0;
+}
+
+.small-text {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+/* top-banner */
+
+.top-banner {
+    background-color: #4fb3d4;
+    background-image: url(./assets/asset\ 32.png);
+    background-size: 300px;                                 /*set backgound image size*/
+    /* background-repeat: repeat;*/                         /* default value*/
+    margin-top: 0 !important;
+}
+
+.banner-text {
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+
+
+
+
+/* nav-bar */
+
+.main-nav {
+    justify-content: space-between;
+}
+
+.company-logo img {
+    width: 200px;
+}
+
+.nav-links {
+    flex-basis: 730px;        /*set the width of the nav links*/
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+
+
+
+/* header section */
+
+.content {
+    width: 40vw;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+}
+
+.main-header {
+    padding-inline: var(--padding-inline-section);
+    justify-content: space-between;
+}
+
+.content ul a {
+    padding: 15px 30px;
+}
+
+.main-nav div.menu {
+    width: 50px;
+    display: none;
+}
+
+
+
+
+/* companies-section */
+
+.section1 h4 {
+    text-align: center;
+}
+
+.section1 .companies-image img {
+    width: 13%;
+}
+
+.section1 .companies-image #img-name-box {
+    width: 50px;
+}
+
+.section1 .companies-image {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* feature-section */
+
+.section2 {
+    flex-direction: column;
+    background-image: url(./assets/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center;                   /* sets the backgound image position */
+    background-size: auto 95%;                      /* sets width and then height */
+    /* background-size: cover; */
+    padding-top: var(--padding-inline-section);
+
+}
+
+.section2 a {
+    margin-bottom: 30px;
+}
+
+.different-features {
+    justify-content: space-between;
+    /* flex-direction: ; */
+    flex-wrap: wrap;
+    /* padding-inline: 40px; */
+}
+
+.different-features div {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    width: 28%;
+}
+
+.different-features img.feature-logo {
+    width: 40px;
+}
+
+
+
+
+
+
+/* big-feature-section -- section3 */
+
+.section3 .image img {
+    width: 100%;
+    height: auto;
+}
+
+.section3 {
+    gap: 20px;
+}
+
+.section3 .image {
+    padding: 0 20px;
+}
+
+.section3 .content {
+    padding: 0 60px;
+    background-image: url(./assets/asset\ 35.svg);
+    background-repeat: no-repeat;
+    background-position: 0 center;          /* 20px from left and center in the vertical position*/
+}
+
+.part2 img {
+    width: 100px;
+}
+
+.creator img {
+    width: 50px;
+}
+
+
+
+
+
+/* example section */
+
+.example {
+    text-align: center;
+    margin-block: 60px;
+}
+
+.section6 {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.example-section {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.examples {
+    width: 23%;
+    height: 300px;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    background-color: black;                /* incase the browser is unable to get the backgoound image */
+    background: linear-gradient(rgba(204, 200, 200, 0.046), rgba(40, 40, 40, 0.7));
+}
+
+.examples:hover {
+    box-shadow: 0 0 5px brown;
+}
+
+
+/* :nth-child(1)           not working */
+
+#example1 {
+    background: linear-gradient(rgba(204, 200, 200, 0.1), rgba(40, 40, 40, 0.9)), url(./assets/asset\ 36.jpeg);
+    background-size: cover;
+    /* background: ; */
+}
+
+#example2 {
+    background: linear-gradient(rgba(204, 200, 200, 0.1), rgba(40, 40, 40, 0.9)), url(./assets/asset\ 37.jpeg);
+    background-size: cover;
+}
+
+#example3 {
+    background: linear-gradient(rgba(204, 200, 200, 0.1), rgba(40, 40, 40, 0.9)), url(./assets/asset\ 38.jpeg);
+    background-size: cover;
+}
+
+#example4 {
+    background: linear-gradient(rgba(204, 200, 200, 0.1), rgba(40, 40, 40, 0.9)), url(./assets/asset\ 39.jpeg);
+    background-size: cover;
+}
+
+.examples h3 {
+    position: absolute;
+    bottom: 10px;
+    text-align: left;
+    padding-inline: 10px;
+}
+
+
+
+
+
+/* big-feature-section7 */
+
+.big-feature-section7 {
+    background-color: var(--primary-text-color);
+    padding: 20px;
+}
+
+.section7 .content {
+    width: 50vw;
+    padding-inline: 20px;
+}
+
+.section7 h1, .section7 h3 {
+    color: white;
+    margin-block: 10px;
+}
+
+.section7 .content h1.first-heading {
+    margin-bottom: 0;
+}
+
+.section7 .content h1.second-heading {
+    margin-top: 0;
+}
+
+.section7 p, .main-list ul li {
+    color: var(--secondary-text-color);
+}
+
+.section7 ul {
+    list-style-type: disc;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.section7 ul a {
+    padding: 0;
+    text-decoration: underline dashed var(--secondary-text-color);
+}
+
+.main-list {
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.main-list ul li, .main-list ul li a {
+    margin-block: 10px;
+}
+
+.main-list ul a {
+    display: inline;
+}
+
+.section7 .image img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+/* cta-section */
+
+.cta {
+    text-align: center;
+    padding: 40px;
+    /* height: 70vh; */
+    /* vertical-align: baseline; */
+}
+
+.cta ul li {
+    display: inline;
+}
+
+.cta p.margin-updown {
+    margin: 40px 0;
+}
+
+
+
+
+
+/* footer section */
+
+.footer {
+    background-color: rgb(229, 243, 255);
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.footer .margin-updown {
+    margin-block: 0;
+}
+
+.gap-between {
+    line-height: 2rem;
+}
+
+.footer div a {
+    color: var(--secondary-text-color);
+}
+
+.footer .flex {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+
+
+
+
+/* sub-footer starts */
+
+.subfooter {
+    background-color: rgb(152, 201, 225);
+    min-height: 60px;
+    padding-block: 20px;
+    margin-block: 0;
+}
+
+.sub-foot-content {
+    height: 100%;
+    justify-content: space-around;
+}
+
+.sub-foot-content div.part1{
+    width: 500px;
+    justify-content: space-evenly;
+}
+
+.sub-foot-content div.part2 {
+    width: 200px;
+    justify-content: space-evenly;
+}
+
+.sub-foot-content div.part2 img {
+    width: 18px;
+}
